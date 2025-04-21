@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7ytk8d5xps82"
+path="res://.godot/imported/Lofi Generator_B_S2 vln.mp3-b8276e9160fe0bf4a140fd72e0f43768.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/2 violin/B Section/Lofi Generator_B_S2 vln.mp3"
+dest_files=["res://.godot/imported/Lofi Generator_B_S2 vln.mp3-b8276e9160fe0bf4a140fd72e0f43768.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=72.0
+beat_count=0
+bar_beats=4

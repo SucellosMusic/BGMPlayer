@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dn2ule33ld5n5"
+path="res://.godot/imported/Lofi Generator_A_S4 pno.mp3-1eadfbe560c7039a9f69b1782b1d71aa.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/5 piano/A Section/Lofi Generator_A_S4 pno.mp3"
+dest_files=["res://.godot/imported/Lofi Generator_A_S4 pno.mp3-1eadfbe560c7039a9f69b1782b1d71aa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=72.0
+beat_count=0
+bar_beats=4

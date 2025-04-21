@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://brlhnnm53myvk"
+path="res://.godot/imported/Lofi Generator_B_S2 harp.mp3-ec244ed78009525aafd7db565948d19b.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/1 harp/B Section/Lofi Generator_B_S2 harp.mp3"
+dest_files=["res://.godot/imported/Lofi Generator_B_S2 harp.mp3-ec244ed78009525aafd7db565948d19b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=72.0
+beat_count=0
+bar_beats=4

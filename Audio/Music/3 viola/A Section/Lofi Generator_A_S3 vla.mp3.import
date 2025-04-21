@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://38o6ff3g1r42"
+path="res://.godot/imported/Lofi Generator_A_S3 vla.mp3-7d11e36360b3007f8eec7277a81a2f53.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/3 viola/A Section/Lofi Generator_A_S3 vla.mp3"
+dest_files=["res://.godot/imported/Lofi Generator_A_S3 vla.mp3-7d11e36360b3007f8eec7277a81a2f53.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=72.0
+beat_count=0
+bar_beats=4

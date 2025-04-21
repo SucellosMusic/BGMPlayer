@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://djnhv0r0t7gyc"
+path="res://.godot/imported/Lofi Generator_C_SNull vln.mp3-d8d7f0a9640283b9bc19b03b46039ac6.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/2 violin/C Section/Lofi Generator_C_SNull vln.mp3"
+dest_files=["res://.godot/imported/Lofi Generator_C_SNull vln.mp3-d8d7f0a9640283b9bc19b03b46039ac6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=72.0
+beat_count=0
+bar_beats=4

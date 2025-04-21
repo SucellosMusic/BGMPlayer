@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpwagfame44pr"
+path="res://.godot/imported/Lofi Generator_B_Null Main Perc.mp3-c7e1b30dc18e9678b618c2792c6bf23e.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/Main Percussion/Lofi Generator_B_Null Main Perc.mp3"
+dest_files=["res://.godot/imported/Lofi Generator_B_Null Main Perc.mp3-c7e1b30dc18e9678b618c2792c6bf23e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=72.0
+beat_count=0
+bar_beats=4

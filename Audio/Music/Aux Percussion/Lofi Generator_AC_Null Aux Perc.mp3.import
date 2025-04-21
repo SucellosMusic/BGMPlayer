@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://0kxvscpslqer"
+path="res://.godot/imported/Lofi Generator_AC_Null Aux Perc.mp3-a7b552743b8855ea1767f51e648237bc.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/Aux Percussion/Lofi Generator_AC_Null Aux Perc.mp3"
+dest_files=["res://.godot/imported/Lofi Generator_AC_Null Aux Perc.mp3-a7b552743b8855ea1767f51e648237bc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=72.0
+beat_count=0
+bar_beats=4

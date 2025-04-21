@@ -1,0 +1,729 @@
+[gd_scene load_steps=126 format=3 uid="uid://cq358nfai1an"]
+
+[ext_resource type="Texture2D" uid="uid://b1frubsssku05" path="res://Images/Lake View.jpg" id="1_0tort"]
+[ext_resource type="AudioStream" uid="uid://rltefhkh0vqn" path="res://Audio/Music/1 harp/A Section/Lofi Generator_A_S1 harp.mp3" id="2_h3vbk"]
+[ext_resource type="Script" path="res://BGM Player.gd" id="2_nsyx3"]
+[ext_resource type="AudioStream" uid="uid://cjj8unig1b4om" path="res://Audio/Music/1 harp/A Section/Lofi Generator_A_S2 harp.mp3" id="3_c7g6n"]
+[ext_resource type="AudioStream" uid="uid://bvu3rgrpwt4es" path="res://Audio/Music/1 harp/A Section/Lofi Generator_A_S3 harp.mp3" id="4_b6d4a"]
+[ext_resource type="AudioStream" uid="uid://dist67pn70dvw" path="res://Audio/Music/1 harp/A Section/Lofi Generator_A_S4 harp.mp3" id="5_egco4"]
+[ext_resource type="AudioStream" uid="uid://cfhtyh77uun1p" path="res://Audio/Music/Main Percussion/Lofi Generator_B_Play Main Perc.mp3" id="5_t1x4r"]
+[ext_resource type="AudioStream" uid="uid://d1kdrsusx8sgw" path="res://Audio/Music/Main Percussion/Lofi Generator_B_Null Main Perc.mp3" id="6_cmvji"]
+[ext_resource type="AudioStream" uid="uid://bqe00pfkanfqh" path="res://Audio/Music/1 harp/A Section/Lofi Generator_A_SNull harp.mp3" id="6_v6ehh"]
+[ext_resource type="AudioStream" uid="uid://6w5wg74ccdob" path="res://Audio/Music/2 violin/A Section/Lofi Generator_A_S1 vln.mp3" id="7_18xt8"]
+[ext_resource type="AudioStream" uid="uid://bhe5yerf6nsln" path="res://Audio/Music/2 violin/A Section/Lofi Generator_A_S2 vln.mp3" id="8_bs0q0"]
+[ext_resource type="AudioStream" uid="uid://c1bom4j31wcvg" path="res://Audio/Music/2 violin/A Section/Lofi Generator_A_S3 vln.mp3" id="9_q1abx"]
+[ext_resource type="AudioStream" uid="uid://c6gb3wtqxuoif" path="res://Audio/Music/2 violin/A Section/Lofi Generator_A_S4 vln.mp3" id="10_s1cgl"]
+[ext_resource type="AudioStream" uid="uid://dpbqca3wofmlx" path="res://Audio/Music/2 violin/A Section/Lofi Generator_A_SNull vln.mp3" id="11_tqqo0"]
+[ext_resource type="AudioStream" uid="uid://cyeomuvb1q0vt" path="res://Audio/Music/3 viola/A Section/Lofi Generator_A_S1 vla.mp3" id="12_65roi"]
+[ext_resource type="AudioStream" uid="uid://bkplt1bvo3s36" path="res://Audio/Music/3 viola/A Section/Lofi Generator_A_S2 vla.mp3" id="13_mkgfv"]
+[ext_resource type="AudioStream" uid="uid://b5k8bp1juopdr" path="res://Audio/Music/3 viola/A Section/Lofi Generator_A_S3 vla.mp3" id="14_tn5sd"]
+[ext_resource type="AudioStream" uid="uid://dn8r637jxqwl6" path="res://Audio/Music/3 viola/A Section/Lofi Generator_A_S4 vla.mp3" id="15_wvewy"]
+[ext_resource type="AudioStream" uid="uid://d27m6o31nac31" path="res://Audio/Music/3 viola/A Section/Lofi Generator_A_SNull vla.mp3" id="16_t60l3"]
+[ext_resource type="AudioStream" uid="uid://bkonwk1bxeslw" path="res://Audio/Music/4 cello/A Section/Lofi Generator_A_S1 clo.mp3" id="17_tchto"]
+[ext_resource type="AudioStream" uid="uid://d1rfgfjkdbxmi" path="res://Audio/Music/4 cello/A Section/Lofi Generator_A_S2 clo.mp3" id="18_rmr4h"]
+[ext_resource type="AudioStream" uid="uid://bkh2i4h67rfw6" path="res://Audio/Music/4 cello/A Section/Lofi Generator_A_S3 clo.mp3" id="19_xh33r"]
+[ext_resource type="AudioStream" uid="uid://w8vai4fcm0al" path="res://Audio/Music/4 cello/A Section/Lofi Generator_A_S4 clo.mp3" id="20_ksqoo"]
+[ext_resource type="AudioStream" uid="uid://d2g4hubjne3cx" path="res://Audio/Music/4 cello/A Section/Lofi Generator_A_SNull clo.mp3" id="21_4hjre"]
+[ext_resource type="AudioStream" uid="uid://dloe3rpvlw50w" path="res://Audio/Music/5 piano/A Section/Lofi Generator_A_S1 pno.mp3" id="22_kp13y"]
+[ext_resource type="AudioStream" uid="uid://2btyf1gok1op" path="res://Audio/Music/5 piano/A Section/Lofi Generator_A_S2 pno.mp3" id="23_mf0ji"]
+[ext_resource type="AudioStream" uid="uid://byq76s7kpofd" path="res://Audio/Music/5 piano/A Section/Lofi Generator_A_S3 pno.mp3" id="24_0k68f"]
+[ext_resource type="AudioStream" uid="uid://b7i2wh0jjbcuw" path="res://Audio/Music/5 piano/A Section/Lofi Generator_A_S4 pno.mp3" id="25_ccce4"]
+[ext_resource type="AudioStream" uid="uid://dgmvivayoq8j5" path="res://Audio/Music/5 piano/A Section/Lofi Generator_A_SNull pno.mp3" id="26_s6ymu"]
+[ext_resource type="AudioStream" uid="uid://dgl3q6k30vn3s" path="res://Audio/Music/6 bass/A Section/Lofi Generator_A_S1 bass.mp3" id="27_w5k6r"]
+[ext_resource type="AudioStream" uid="uid://del4uwve02w3p" path="res://Audio/Music/6 bass/A Section/Lofi Generator_A_S2 bass.mp3" id="28_ocmuw"]
+[ext_resource type="AudioStream" uid="uid://d4atneaa0y86a" path="res://Audio/Music/6 bass/A Section/Lofi Generator_A_S3 bass.mp3" id="29_ev40m"]
+[ext_resource type="AudioStream" uid="uid://cp8af6mokr8yy" path="res://Audio/Music/6 bass/A Section/Lofi Generator_A_S4 bass.mp3" id="30_eamqo"]
+[ext_resource type="AudioStream" uid="uid://dtwqr8pch8m33" path="res://Audio/Music/6 bass/A Section/Lofi Generator_A_sNull bass.mp3" id="31_tttue"]
+[ext_resource type="AudioStream" uid="uid://caq7xqvlppbh" path="res://Audio/Music/Aux Percussion/Lofi Generator_AC_Play Aux Perc.mp3" id="32_o6w5i"]
+[ext_resource type="AudioStream" uid="uid://cduq6awvwuyxg" path="res://Audio/Music/Aux Percussion/Lofi Generator_AC_Null Aux Perc.mp3" id="33_423im"]
+[ext_resource type="AudioStream" uid="uid://bxir6k40w5abi" path="res://Audio/Music/Main Percussion/Lofi Generator_AC_Play Main Perc.mp3" id="34_q42mk"]
+[ext_resource type="AudioStream" uid="uid://dxs3mw2x5keun" path="res://Audio/Music/Main Percussion/Lofi Generator_AC_Null Main Perc.mp3" id="35_j0df8"]
+[ext_resource type="AudioStream" uid="uid://di3ynfoqb81p1" path="res://Audio/Music/1 harp/B Section/Lofi Generator_B_S1 harp.mp3" id="36_nfrfm"]
+[ext_resource type="AudioStream" uid="uid://wto0ya2skdfl" path="res://Audio/Music/1 harp/B Section/Lofi Generator_B_S2 harp.mp3" id="37_0uwsm"]
+[ext_resource type="AudioStream" uid="uid://dt1me2yi1kbss" path="res://Audio/Music/1 harp/B Section/Lofi Generator_B_S3 harp.mp3" id="38_of3mq"]
+[ext_resource type="AudioStream" uid="uid://75sie5nriqrd" path="res://Audio/Music/1 harp/B Section/Lofi Generator_B_S4 harp.mp3" id="39_hsi68"]
+[ext_resource type="AudioStream" uid="uid://c03rds005x80q" path="res://Audio/Music/1 harp/B Section/Lofi Generator_B_SNull harp.mp3" id="40_kp6q0"]
+[ext_resource type="AudioStream" uid="uid://q71m3vc40boo" path="res://Audio/Music/2 violin/B Section/Lofi Generator_B_S1 vln.mp3" id="41_m6oly"]
+[ext_resource type="AudioStream" uid="uid://dehdg62tfpvh8" path="res://Audio/Music/2 violin/B Section/Lofi Generator_B_S2 vln.mp3" id="42_rvk0t"]
+[ext_resource type="AudioStream" uid="uid://b0ywdlha4kfny" path="res://Audio/Music/2 violin/B Section/Lofi Generator_B_S3 vln.mp3" id="43_rbkgj"]
+[ext_resource type="AudioStream" uid="uid://bf6pdaw5xx5pr" path="res://Audio/Music/2 violin/B Section/Lofi Generator_B_S4 vln.mp3" id="44_uckjb"]
+[ext_resource type="AudioStream" uid="uid://55653lgb8kqy" path="res://Audio/Music/2 violin/B Section/Lofi Generator_B_SNull vln.mp3" id="45_6na0y"]
+[ext_resource type="AudioStream" uid="uid://ctqc8tqx1e6ph" path="res://Audio/Music/3 viola/B Section/Lofi Generator_B_S1 vla.mp3" id="46_pemll"]
+[ext_resource type="AudioStream" uid="uid://1k4rnwm5u1u7" path="res://Audio/Music/3 viola/B Section/Lofi Generator_B_S2 vla.mp3" id="47_oiuvm"]
+[ext_resource type="AudioStream" uid="uid://dog022qr4lxk3" path="res://Audio/Music/3 viola/B Section/Lofi Generator_B_S3 vla.mp3" id="48_ug1p3"]
+[ext_resource type="AudioStream" uid="uid://bgydoanupds50" path="res://Audio/Music/3 viola/B Section/Lofi Generator_B_S4 vla.mp3" id="49_acyev"]
+[ext_resource type="AudioStream" uid="uid://cv7710rgq6e4o" path="res://Audio/Music/3 viola/B Section/Lofi Generator_B_SNull vla.mp3" id="50_muoqf"]
+[ext_resource type="AudioStream" uid="uid://b6dgrhwubiw87" path="res://Audio/Music/4 cello/B Section/Lofi Generator_B_S1 clo.mp3" id="51_kwe8r"]
+[ext_resource type="AudioStream" uid="uid://f2hi23g6f0b7" path="res://Audio/Music/4 cello/B Section/Lofi Generator_B_S2 clo.mp3" id="52_rg3py"]
+[ext_resource type="AudioStream" uid="uid://cju8gyup7fc4f" path="res://Audio/Music/4 cello/B Section/Lofi Generator_B_S3 clo.mp3" id="53_s0u7f"]
+[ext_resource type="AudioStream" uid="uid://bbeargl2iwk4y" path="res://Audio/Music/4 cello/B Section/Lofi Generator_B_S4 clo.mp3" id="54_qnr0f"]
+[ext_resource type="AudioStream" uid="uid://ddjvx7a7tys61" path="res://Audio/Music/4 cello/B Section/Lofi Generator_B_SNull clo.mp3" id="55_jpejr"]
+[ext_resource type="AudioStream" uid="uid://tmas5ociennf" path="res://Audio/Music/5 piano/B Section/Lofi Generator_B_S1 pno.mp3" id="56_antxj"]
+[ext_resource type="AudioStream" uid="uid://cjirgyb3vhg75" path="res://Audio/Music/5 piano/B Section/Lofi Generator_B_S2 pno.mp3" id="57_5syxo"]
+[ext_resource type="AudioStream" uid="uid://c7xul62800da4" path="res://Audio/Music/5 piano/B Section/Lofi Generator_B_S3 pno.mp3" id="58_eqo7v"]
+[ext_resource type="AudioStream" uid="uid://njajewmffxag" path="res://Audio/Music/5 piano/B Section/Lofi Generator_B_S4 pno.mp3" id="59_pvigt"]
+[ext_resource type="AudioStream" uid="uid://dmculleo3wskq" path="res://Audio/Music/5 piano/B Section/Lofi Generator_B_SNull pno.mp3" id="60_oqxkg"]
+[ext_resource type="AudioStream" uid="uid://cavnpm83i8c4v" path="res://Audio/Music/6 bass/B Section/Lofi Generator_B_S1 bass.mp3" id="61_me5vg"]
+[ext_resource type="AudioStream" uid="uid://b625an0tsqnlk" path="res://Audio/Music/6 bass/B Section/Lofi Generator_B_S2 bass.mp3" id="62_uu3q8"]
+[ext_resource type="AudioStream" uid="uid://b7lhgtspdh8cn" path="res://Audio/Music/6 bass/B Section/Lofi Generator_B_S3 bass.mp3" id="63_wsl3b"]
+[ext_resource type="AudioStream" uid="uid://bogumo5xc2dtp" path="res://Audio/Music/6 bass/B Section/Lofi Generator_B_S4 bass.mp3" id="64_ecgkd"]
+[ext_resource type="AudioStream" uid="uid://c0w45c5gjpupx" path="res://Audio/Music/6 bass/B Section/Lofi Generator_B_SNull bass.mp3" id="65_xojw1"]
+[ext_resource type="AudioStream" uid="uid://bd4amk7wrtsew" path="res://Audio/Music/Aux Percussion/Lofi Generator_B_Play Aux Perc.mp3" id="66_ni2up"]
+[ext_resource type="AudioStream" uid="uid://c1ppg8n2cwehq" path="res://Audio/Music/Aux Percussion/Lofi Generator_B_Null Aux Perc.mp3" id="67_8b84v"]
+[ext_resource type="AudioStream" uid="uid://u1508yia58n4" path="res://Audio/Music/1 harp/C Section/Lofi Generator_C_S1 harp.mp3" id="68_b5y5q"]
+[ext_resource type="AudioStream" uid="uid://cteba6yjeieml" path="res://Audio/Music/1 harp/C Section/Lofi Generator_C_S2 harp.mp3" id="69_64c4h"]
+[ext_resource type="AudioStream" uid="uid://cifxwdw3pylny" path="res://Audio/Music/1 harp/C Section/Lofi Generator_C_S3 harp.mp3" id="70_r0n7g"]
+[ext_resource type="AudioStream" uid="uid://cihha72tq2j34" path="res://Audio/Music/1 harp/C Section/Lofi Generator_C_S4 harp.mp3" id="71_lgotd"]
+[ext_resource type="AudioStream" uid="uid://b84tpw3t6q8sk" path="res://Audio/Music/1 harp/C Section/Lofi Generator_C_SNull harp.mp3" id="72_021k2"]
+[ext_resource type="AudioStream" uid="uid://pwsjgcubutl5" path="res://Audio/Music/2 violin/C Section/Lofi Generator_C_S1 vln.mp3" id="73_d738w"]
+[ext_resource type="AudioStream" uid="uid://r1bd5ffb44c3" path="res://Audio/Music/2 violin/C Section/Lofi Generator_C_S2 vln.mp3" id="74_ol07a"]
+[ext_resource type="AudioStream" uid="uid://gttqjlo1qi8i" path="res://Audio/Music/2 violin/C Section/Lofi Generator_C_S3 vln.mp3" id="75_6em1v"]
+[ext_resource type="AudioStream" uid="uid://ctuyonmgy4eok" path="res://Audio/Music/2 violin/C Section/Lofi Generator_C_S4 vln.mp3" id="76_048ym"]
+[ext_resource type="AudioStream" uid="uid://dwlk50fhmu6rb" path="res://Audio/Music/2 violin/C Section/Lofi Generator_C_SNull vln.mp3" id="77_w56in"]
+[ext_resource type="AudioStream" uid="uid://dtpb4rg6oynvd" path="res://Audio/Music/3 viola/C Section/Lofi Generator_C_S1 vla.mp3" id="78_lekij"]
+[ext_resource type="AudioStream" uid="uid://b77rr5lijae48" path="res://Audio/Music/3 viola/C Section/Lofi Generator_C_S2 vla.mp3" id="79_kvd42"]
+[ext_resource type="AudioStream" uid="uid://bcs7htshihdnj" path="res://Audio/Music/3 viola/C Section/Lofi Generator_C_S3 vla.mp3" id="80_8n2d7"]
+[ext_resource type="AudioStream" uid="uid://cclxy46lgtr5p" path="res://Audio/Music/3 viola/C Section/Lofi Generator_C_S4 vla.mp3" id="81_jf3cf"]
+[ext_resource type="AudioStream" uid="uid://dyreu7ct06aqq" path="res://Audio/Music/3 viola/C Section/Lofi Generator_C_SNull vla.mp3" id="82_3cclx"]
+[ext_resource type="AudioStream" uid="uid://c1wximoil0w8" path="res://Audio/Music/4 cello/C Section/Lofi Generator_C_S1 clo.mp3" id="83_oaqnw"]
+[ext_resource type="AudioStream" uid="uid://d0tnjrhsgberi" path="res://Audio/Music/4 cello/C Section/Lofi Generator_C_S2 clo.mp3" id="84_4vmdx"]
+[ext_resource type="AudioStream" uid="uid://btwrbrb2ycvfh" path="res://Audio/Music/4 cello/C Section/Lofi Generator_C_S3 clo.mp3" id="85_836d3"]
+[ext_resource type="AudioStream" uid="uid://dc4oyiqioguj1" path="res://Audio/Music/4 cello/C Section/Lofi Generator_C_S4 clo.mp3" id="86_4253f"]
+[ext_resource type="AudioStream" uid="uid://bxffbyteugwwh" path="res://Audio/Music/4 cello/C Section/Lofi Generator_C_SNull clo.mp3" id="87_td1fe"]
+[ext_resource type="AudioStream" uid="uid://dcgr1ip8gsar7" path="res://Audio/Music/5 piano/C Section/Lofi Generator_C_S1 pno.mp3" id="88_krj0i"]
+[ext_resource type="AudioStream" uid="uid://siduxofstc2p" path="res://Audio/Music/5 piano/C Section/Lofi Generator_C_S2 pno.mp3" id="89_l2c2x"]
+[ext_resource type="AudioStream" uid="uid://cewbdnc2c5dnq" path="res://Audio/Music/5 piano/C Section/Lofi Generator_C_S3 pno.mp3" id="90_sq0no"]
+[ext_resource type="AudioStream" uid="uid://dwpxit8fvi576" path="res://Audio/Music/5 piano/C Section/Lofi Generator_C_S4 pno.mp3" id="91_h3iud"]
+[ext_resource type="AudioStream" uid="uid://bvuc0anrsjq6c" path="res://Audio/Music/5 piano/C Section/Lofi Generator_C_SNull pno.mp3" id="92_iib35"]
+[ext_resource type="AudioStream" uid="uid://cipbxyc88dupv" path="res://Audio/Music/6 bass/C Section/Lofi Generator_C_S1 bass.mp3" id="93_t4vhf"]
+[ext_resource type="AudioStream" uid="uid://bxxwmg5c8raum" path="res://Audio/Music/6 bass/C Section/Lofi Generator_C_S2 bass.mp3" id="94_jgany"]
+[ext_resource type="AudioStream" uid="uid://dnhbis0j24yss" path="res://Audio/Music/6 bass/C Section/Lofi Generator_C_S3 bass.mp3" id="95_jg0yh"]
+[ext_resource type="AudioStream" uid="uid://dl75qbjter0lg" path="res://Audio/Music/6 bass/C Section/Lofi Generator_C_S4 bass.mp3" id="96_qe3hm"]
+[ext_resource type="AudioStream" uid="uid://dd6lcmcmigq5r" path="res://Audio/Music/6 bass/C Section/Lofi Generator_C_SNull bass.mp3" id="97_jc0v6"]
+
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_ohvf1"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_oy7jq"]
+streams_count = 2
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("34_q42mk")
+stream_0/weight = 75.0
+stream_1/stream = ExtResource("35_j0df8")
+stream_1/weight = 25.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_3qb7u"]
+streams_count = 2
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("32_o6w5i")
+stream_0/weight = 75.0
+stream_1/stream = ExtResource("33_423im")
+stream_1/weight = 25.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_3o2bx"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("27_w5k6r")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("28_ocmuw")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("29_ev40m")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("30_eamqo")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("31_tttue")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_jqfin"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("22_kp13y")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("23_mf0ji")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("24_0k68f")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("25_ccce4")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("26_s6ymu")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_3c6rv"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("17_tchto")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("18_rmr4h")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("19_xh33r")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("20_ksqoo")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("21_4hjre")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_j6kuq"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("12_65roi")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("13_mkgfv")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("14_tn5sd")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("15_wvewy")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("16_t60l3")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_vdnhd"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("7_18xt8")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("8_bs0q0")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("9_q1abx")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("10_s1cgl")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("11_tqqo0")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_sjyr2"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("2_h3vbk")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("3_c7g6n")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("4_b6d4a")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("5_egco4")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("6_v6ehh")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_i3ntr"]
+streams_count = 2
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("5_t1x4r")
+stream_0/weight = 75.0
+stream_1/stream = ExtResource("6_cmvji")
+stream_1/weight = 25.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_jd1c8"]
+streams_count = 2
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("66_ni2up")
+stream_0/weight = 75.0
+stream_1/stream = ExtResource("67_8b84v")
+stream_1/weight = 25.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_j008n"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("61_me5vg")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("62_uu3q8")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("63_wsl3b")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("64_ecgkd")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("65_xojw1")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_dcbth"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("56_antxj")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("57_5syxo")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("58_eqo7v")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("59_pvigt")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("60_oqxkg")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_qmf1e"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("51_kwe8r")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("52_rg3py")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("53_s0u7f")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("54_qnr0f")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("55_jpejr")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_gin8a"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("46_pemll")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("47_oiuvm")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("48_ug1p3")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("49_acyev")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("50_muoqf")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_7y6jx"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("41_m6oly")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("42_rvk0t")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("43_rbkgj")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("44_uckjb")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("45_6na0y")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_pf4ac"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("36_nfrfm")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("37_0uwsm")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("38_of3mq")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("39_hsi68")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("40_kp6q0")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_6a665"]
+streams_count = 2
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("34_q42mk")
+stream_0/weight = 75.0
+stream_1/stream = ExtResource("35_j0df8")
+stream_1/weight = 25.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_gdg42"]
+streams_count = 2
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("32_o6w5i")
+stream_0/weight = 75.0
+stream_1/stream = ExtResource("33_423im")
+stream_1/weight = 25.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_jlr13"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("93_t4vhf")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("94_jgany")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("95_jg0yh")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("96_qe3hm")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("97_jc0v6")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_w4kjl"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("88_krj0i")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("89_l2c2x")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("90_sq0no")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("91_h3iud")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("92_iib35")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_f0alu"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("83_oaqnw")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("84_4vmdx")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("85_836d3")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("86_4253f")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("87_td1fe")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_pbvqp"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("78_lekij")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("79_kvd42")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("80_8n2d7")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("81_jf3cf")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("82_3cclx")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_74mqs"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("73_d738w")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("74_ol07a")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("75_6em1v")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("76_048ym")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("77_w56in")
+stream_4/weight = 20.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ui2q8"]
+streams_count = 5
+random_pitch = 1.0
+random_volume_offset_db = 0.0
+stream_0/stream = ExtResource("68_b5y5q")
+stream_0/weight = 20.0
+stream_1/stream = ExtResource("69_64c4h")
+stream_1/weight = 20.0
+stream_2/stream = ExtResource("70_r0n7g")
+stream_2/weight = 20.0
+stream_3/stream = ExtResource("71_lgotd")
+stream_3/weight = 20.0
+stream_4/stream = ExtResource("72_021k2")
+stream_4/weight = 20.0
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_vertical_guides_ = [24.0, 125.0, 260.0, 135.0, 270.0, 395.0, 405.0, 530.0, 540.0, 665.0, 674.0, 934.0]
+metadata/_edit_horizontal_guides_ = [451.0, 75.0, 25.0, 80.0, 133.0, 185.0, 200.0, 255.0, 265.0, 330.0, 385.0, 395.0, 460.0, 515.0, 524.0, 575.0, 584.0, 637.0, 649.0, 703.0, 320.0]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -151.0
+offset_top = -21.0
+offset_right = 1678.0
+offset_bottom = 813.0
+texture = ExtResource("1_0tort")
+
+[node name="Title Bar" type="Label" parent="."]
+layout_mode = 0
+offset_left = 540.0
+offset_top = 223.0
+offset_right = 934.0
+offset_bottom = 474.0
+theme_override_font_sizes/font_size = 41
+text = "Lofi Music 
+Music
+Generator
+by Sucellos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Basic Controls" type="Label" parent="."]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 133.0
+offset_right = 186.0
+offset_bottom = 185.0
+text = "Basic 
+Controls"
+horizontal_alignment = 1
+
+[node name="Start" type="Button" parent="Basic Controls"]
+layout_mode = 0
+offset_left = -61.0
+offset_top = 67.0
+offset_right = 40.0
+offset_bottom = 122.0
+text = "Start"
+
+[node name="Stop" type="Button" parent="Basic Controls"]
+layout_mode = 0
+offset_left = -61.0
+offset_top = 132.0
+offset_right = 39.0
+offset_bottom = 187.0
+text = "Stop
+"
+
+[node name="Label" type="Label" parent="Basic Controls"]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 68.0
+offset_right = 141.0
+offset_bottom = 94.0
+text = "Volume
+"
+
+[node name="VSlider" type="VSlider" parent="Basic Controls"]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 100.0
+offset_right = 136.0
+offset_bottom = 365.0
+
+[node name="Treble Boost" type="Button" parent="Basic Controls"]
+layout_mode = 0
+offset_left = -61.0
+offset_top = 197.0
+offset_right = 40.0
+offset_bottom = 251.0
+theme_override_font_sizes/font_size = 14
+text = "Treble
+ Boost"
+
+[node name="Bass Boost2" type="Button" parent="Basic Controls"]
+layout_mode = 0
+offset_left = -61.0
+offset_top = 262.0
+offset_right = 41.0
+offset_bottom = 317.0
+theme_override_font_sizes/font_size = 14
+text = "Bass 
+Boost"
+
+[node name="Toggle Instruments" type="Label" parent="."]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 133.0
+offset_right = 395.0
+offset_bottom = 185.0
+text = "Toggle
+Instruments"
+horizontal_alignment = 1
+
+[node name="Harp" type="Button" parent="Toggle Instruments"]
+layout_mode = 0
+offset_top = 67.0
+offset_right = 125.0
+offset_bottom = 122.0
+toggle_mode = true
+text = "Toggle Harp"
+
+[node name="Violin" type="Button" parent="Toggle Instruments"]
+layout_mode = 0
+offset_top = 132.0
+offset_right = 125.0
+offset_bottom = 187.0
+text = "Toggle Violin"
+
+[node name="Viola" type="Button" parent="Toggle Instruments"]
+layout_mode = 0
+offset_top = 197.0
+offset_right = 125.0
+offset_bottom = 252.0
+text = "Toggle Viola"
+
+[node name="Cello" type="Button" parent="Toggle Instruments"]
+layout_mode = 0
+offset_top = 262.0
+offset_right = 125.0
+offset_bottom = 317.0
+text = "Toggle Cello"
+
+[node name="Piano" type="Button" parent="Toggle Instruments"]
+layout_mode = 0
+offset_top = 327.0
+offset_right = 125.0
+offset_bottom = 382.0
+text = "Toggle Piano"
+
+[node name="Bass" type="Button" parent="Toggle Instruments"]
+layout_mode = 0
+offset_top = 390.0
+offset_right = 126.0
+offset_bottom = 442.0
+text = "Toggle Bass"
+
+[node name="Aux Percussion" type="Button" parent="Toggle Instruments"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 451.0
+offset_right = 125.0
+offset_bottom = 505.0
+text = "Toggle Aux 
+Percussion"
+
+[node name="Main Percussion" type="Button" parent="Toggle Instruments"]
+layout_mode = 0
+offset_top = 516.0
+offset_right = 125.0
+offset_bottom = 570.0
+text = "Toggle Main
+Percussion"
+
+[node name="Toggle Sections" type="Label" parent="."]
+layout_mode = 0
+offset_left = 675.0
+offset_top = 80.0
+offset_right = 800.0
+offset_bottom = 132.0
+text = "Disable
+Sections"
+horizontal_alignment = 1
+
+[node name="Toggle A" type="Button" parent="Toggle Sections"]
+layout_mode = 0
+offset_left = -135.0
+offset_top = 53.0
+offset_right = -10.0
+offset_bottom = 105.0
+text = "Toggle A"
+
+[node name="Toggle B" type="Button" parent="Toggle Sections"]
+layout_mode = 0
+offset_top = 53.0
+offset_right = 125.0
+offset_bottom = 105.0
+text = "Toggle B"
+
+[node name="Toggle C" type="Button" parent="Toggle Sections"]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 53.0
+offset_right = 260.0
+offset_bottom = 105.0
+text = "Toggle C"
+
+[node name="BGM Player" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamPolyphonic_ohvf1")
+max_polyphony = 10
+script = ExtResource("2_nsyx3")
+
+[node name="main perc A" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_oy7jq")
+bus = &"Main Perc"
+
+[node name="aux perc A" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_3qb7u")
+bus = &"Aux Perc"
+
+[node name="bass A" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_3o2bx")
+bus = &"Bass"
+
+[node name="piano A" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_jqfin")
+bus = &"Piano"
+
+[node name="cello A" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_3c6rv")
+bus = &"Cello"
+
+[node name="viola A" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_j6kuq")
+bus = &"Viola"
+
+[node name="violin A" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_vdnhd")
+bus = &"Violin"
+
+[node name="harp A" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_sjyr2")
+bus = &"Harp"
+
+[node name="main perc B" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_i3ntr")
+bus = &"Main Perc"
+
+[node name="aux perc B" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_jd1c8")
+bus = &"Aux Perc"
+
+[node name="bass B" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_j008n")
+bus = &"Bass"
+
+[node name="piano B" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_dcbth")
+bus = &"Piano"
+
+[node name="cello B" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_qmf1e")
+bus = &"Cello"
+
+[node name="viola B" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_gin8a")
+bus = &"Viola"
+
+[node name="violin B" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_7y6jx")
+bus = &"Violin"
+
+[node name="harp B" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_pf4ac")
+bus = &"Harp"
+
+[node name="main perc C" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_6a665")
+bus = &"Main Perc"
+
+[node name="aux perc C" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_gdg42")
+bus = &"Aux Perc"
+
+[node name="bass C" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_jlr13")
+bus = &"Bass"
+
+[node name="piano C" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_w4kjl")
+bus = &"Piano"
+
+[node name="cello C" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_f0alu")
+bus = &"Cello"
+
+[node name="viola C" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_pbvqp")
+bus = &"Viola"
+
+[node name="violin C" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_74mqs")
+bus = &"Violin"
+
+[node name="harp C" type="AudioStreamPlayer" parent="BGM Player"]
+stream = SubResource("AudioStreamRandomizer_ui2q8")
+bus = &"Harp"
+
+[connection signal="pressed" from="Basic Controls/Start" to="BGM Player" method="_on_start_pressed"]

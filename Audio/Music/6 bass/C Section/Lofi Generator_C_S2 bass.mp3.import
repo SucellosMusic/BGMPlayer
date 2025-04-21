@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ctopgdlsdyvd1"
+path="res://.godot/imported/Lofi Generator_C_S2 bass.mp3-107d923bdd87cc28ad1c9da5ab99adc4.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/6 bass/C Section/Lofi Generator_C_S2 bass.mp3"
+dest_files=["res://.godot/imported/Lofi Generator_C_S2 bass.mp3-107d923bdd87cc28ad1c9da5ab99adc4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=72.0
+beat_count=0
+bar_beats=4

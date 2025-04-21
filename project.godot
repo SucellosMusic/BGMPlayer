@@ -1,0 +1,27 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="BGM Player"
+run/main_scene="res://BGM Controller.tscn"
+config/features=PackedStringArray("4.1", "Mobile")
+run/max_fps=30
+config/icon="res://Images/Icons/sucellos-ALL.ico"
+config/windows_native_icon="res://Images/Icons/sucellos-ALL.ico"
+
+[display]
+
+window/size/viewport_width=875
+window/size/resizable=false
+
+[rendering]
+
+renderer/rendering_method="mobile"

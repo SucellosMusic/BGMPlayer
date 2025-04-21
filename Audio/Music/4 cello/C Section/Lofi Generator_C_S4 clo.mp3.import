@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbn3orx4vh3u8"
+path="res://.godot/imported/Lofi Generator_C_S4 clo.mp3-c9114c5f57fabcd5013b005dd17eae2d.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/4 cello/C Section/Lofi Generator_C_S4 clo.mp3"
+dest_files=["res://.godot/imported/Lofi Generator_C_S4 clo.mp3-c9114c5f57fabcd5013b005dd17eae2d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=72.0
+beat_count=0
+bar_beats=4
